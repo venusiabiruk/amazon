@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  width: 1150px;
+  margin: 20px auto;
+  justify-content: center;
+  gap: 20px;
+  max-width: 100% !important;
+}
+.container img {
+  width: 120px !important;
+}
+.cart__product {
+  display: flex;
+  gap: 10px;
+}
+.button__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.button__container button {
+  padding: 5px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+.button__container button:hover svg {
+  background-color: var(--primary-color);
+}
+.container div:not(.subtotal) {
+  height: auto !important;
+}
+.cart__container {
+  padding: 20px;
+}
+.cart__container h2,
+.cart__container h3 {
+  padding: 10px;
+}
+.cart__container hr {
+  margin: 10px;
+}
+.subtotal {
+  padding: 20px;
+  min-width: 300px;
+  max-width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: 20px;
+  border: 1px solid rgb(193, 193, 193);
+  background-color: rgb(242, 241, 241);
+  border-radius: 5px;
+}
+.subtotal a {
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  margin: 5px 0;
+}
+.subtotal a:hover {
+  background: var(--primary-shade);
+}
+.subtotal > div,
+.subtotal span {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+}
+@media (max-width: 960px) {
+  .container {
+    flex-direction: column;
+    order: 1;
+  }
+}
